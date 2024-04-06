@@ -12,7 +12,7 @@ public class SeleniumBasic {
             drv.get("https://www.facebook.com");
             WebElement email = drv.findElement(By.id("email"));
     		email.sendKeys("dummyabcemail");
-    		
+    		email.sendKeys("repeated");
     		drv.findElement(By.name("pass")).sendKeys("testpassword");
     		drv.findElement(By.name("login")).click();
     		drv.close();
